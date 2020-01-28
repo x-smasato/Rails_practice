@@ -28,6 +28,11 @@ gem 'jbuilder', '~> 2.7'
 #for Heroku deploy
 gem 'pg', group: :production
 
+gem 'uglifier'
+gem 'coffee-rails'
+gem 'jquery-rails'
+
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
@@ -51,6 +56,11 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
+  gem 'rails-controller-testing'
+  gem 'minitest'
+  gem 'minitest-reporters'
+  gem 'guard'
+  gem 'guard-minitest'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
